@@ -1,0 +1,52 @@
+/* spinner */
+.model-9 {
+	height: 100vh;
+	float: left;
+	left: 0;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 10000;
+	background: #212121;
+	opacity: 0.5;
+	display: none;
+}
+
+.model-9 .spinner:after, .model-9 .spinner:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  border-radius: 100%;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+.model-9 .spinner:before {
+  width: 250px;
+  height: 250px;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+ }		
+
+@keyframes rotate {
+  from {
+   	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+   
+
+  to {
+  	-ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}   
